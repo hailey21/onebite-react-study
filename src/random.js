@@ -10,3 +10,11 @@ export function getRandomName() {
 export function getRandomEmail() {
   return change.email();
 }
+
+export function getRandomBirthday() {
+  return change.birthday({ string: true });
+}
+
+export function getRandomAnimal(type) {
+  return type ? change.animal({ type: type }) : change.animal();
+}
